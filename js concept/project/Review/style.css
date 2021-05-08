@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Reseting the margin border */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Creating a css Var */
+
+:root {
+    --primary-color: linear-gradient(180deg, #F83600 0%, #F9D423 100%);
+    --light-color: #fff;
+    --dark-color: #000;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: var(--primary-color);
+}
+
+h1,
+h2,
+h4 {
+    line-height: 1.2;
+}
+
+
+/* Utility */
+
+
+/* Using Container to centre All elements */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+/* Intro section */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.intro h1 {
+    text-align: center;
+    color: var(--light-color);
+}
+
+.intro-border {
+    width: 100px;
+    height: 5px;
+    margin-top: .5rem;
+    background: var(--light-color);
+    align-self: center;
+}
+
+
+/* Flex Container */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Card  section */
+
+.card {
+    background: var(--light-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 700px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Card img div */
+
+.img {
+    border-radius: 50%;
+    background: var(--primary-color);
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.img img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.img i {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--light-color);
+    background: var(--primary-color);
+    top: 10px;
+    left: 5px;
+}
+
+
+/* Info Section */
+
+.info {
+    margin: 1rem 0;
+}
+
+.info h4 {
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Action Section */
+
+.action {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.icon i {
+    font-size: 30px;
+    margin-left: 1.5rem;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    padding: 1.5rem 2rem;
+    color: var(--light-color);
+    border-radius: 20px;
+    border: none;
+    background: var(--primary-color);
+    left: 7px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
