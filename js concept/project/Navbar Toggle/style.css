@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #002941;
+    --light-color: #fff;
+    --dark-color: #000;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background: var(--primary-color);
+}
+
+
+/* Setting List */
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+
+/* Nav section */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    overflow: hidden;
+}
+
+header {
+    background: var(--light-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.24);
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: all .5s ease;
+}
+
+
+/* Setting display flex to All My Ul items */
+
+#main-nav ul {
+    display: flex;
+}
+
+.title span {
+    color: #AFADFC;
+}
+
+
+/* Links */
+
+.nav-items .nav-links {
+    padding: 0 1rem;
+}
+
+.nav-items .nav-links a {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.nav-items .nav-links a:hover {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+
+/* Social Icons */
+
+.nav-socials .social-icon {
+    padding: 0 1rem;
+}
+
+.nav-socials .social-icon i {
+    background: var(--primary-color);
+    color: var(--light-color);
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.nav-socials .social-icon i:hover {
+    transform: scale(1.1);
+}
+
+.nav-socials .social-icon i.fa-facebook:hover {
+    background: #3b5998;
+}
+
+.nav-socials .social-icon i.fa-twitter:hover {
+    background: #4169e1;
+}
+
+.nav-socials .social-icon i.fa-instagram:hover {
+    background: #fc7e07;
+}
+
+.nav-socials .social-icon i.fa-github:hover {
+    background: #000;
+}
+
+
+/* Toggle bar */
+
+.bar {
+    display: none;
+}
+
+.bar i {
+    font-size: 22px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.bar i:hover {
+    transform: rotate(90deg);
+    color: #AFADFC;
+}
+
+
+/* Main heading */
+
+main h2 {
+    color: var(--light-color);
+    text-align: center;
+    padding-top: 20rem;
+    font-size: 6rem;
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 700px) {
+    /* Navbar Flex Wrap */
+    #main-nav {
+        flex-wrap: wrap;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    /* Nav item hidden */
+    .nav-items .nav-links,
+    .nav-socials .social-icon {
+        /* display: none; */
+    }
+    /* Showing the bars */
+    .bar {
+        display: block;
+    }
+    .bar #toggle-button-hide {
+        display: none;
+    }
+    /* Links */
+    .nav-items {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .nav-items .nav-links {
+        padding: 1rem 0;
+    }
+    /* Nav Socials */
+    .nav-socials {
+        margin-bottom: 2rem;
+    }
+}

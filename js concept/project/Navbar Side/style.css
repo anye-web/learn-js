@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #002941;
+    color: #fff;
+}
+
+
+/* Burger Icon */
+
+.icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.icon:hover {
+    color: #AFADFC;
+}
+
+
+/* Side Bar  */
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar-menu {
+    width: 40%;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-100%);
+}
+
+
+/* Show Side bar Menu */
+
+.show-sidebar-menu {
+    transform: translate(0);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header .logo span {
+    color: #AFADFC;
+}
+
+.header i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header i:hover {
+    color: #AFADFC;
+}
+
+.nav-links {
+    margin: 2rem 0;
+}
+
+.nav-links .links {
+    padding: 1rem 0;
+}
+
+.nav-links .links a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.nav-links .links a:hover {
+    border-color: #AFADFC;
+}
+
+.nav-social-icons {
+    display: flex;
+}
+
+.nav-social-icons .social-icon {
+    background-color: #002941;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+
+/* text */
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.l-heading {
+    font-size: 5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    /* Sidebar Menu */
+    .sidebar-menu {
+        width: 100%;
+    }
+}
